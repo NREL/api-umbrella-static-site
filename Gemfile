@@ -46,6 +46,9 @@ gem "rails-assets-parsleyjs", "~> 2.0.3"
 # Icons
 gem "rails-assets-fontawesome", "~> 4.1.0"
 
+# JS runtime for execjs (used for asset minification).
+gem "therubyracer", "~> 0.12.2"
+
 group :development do
   # Deployment
   gem "capistrano", "~> 3.3.5"
