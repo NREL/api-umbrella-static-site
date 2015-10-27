@@ -2,7 +2,7 @@ source "https://rubygems.org"
 source "https://rails-assets.org"
 
 gem "middleman", "~> 3.3.5"
-gem "rake", "~> 10.3.2"
+gem "rake", "~> 10.4.2"
 
 # Environment specific config with environment variables
 gem "dotenv", "~> 0.11.1"
