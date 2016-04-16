@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-source "https://rails-assets.org"
 
 gem "middleman", "~> 3.3.5"
 gem "rake", "~> 10.4.2"
@@ -31,23 +30,25 @@ gem "kramdown", "~> 1.4.1"
 # JSON validation
 gem "multi_json", "~> 1.10.1"
 
-# jQuery
-gem "rails-assets-jquery", "~> 1.11.2"
-
 # Bootstrap
 gem "bootstrap-sass", "~> 3.2.0.1"
 
-# Programmatic bootstrap modals
-gem "rails-assets-bootbox", "~> 4.3.0"
-
-# Form validation
-gem "rails-assets-parsleyjs", "~> 2.0.3"
-
-# Icons
-gem "rails-assets-fontawesome", "~> 4.1.0"
-
 # JS runtime for execjs (used for asset minification).
 gem "therubyracer", "~> 0.12.2"
+
+source "https://rails-assets.org" do
+  # jQuery
+  gem "rails-assets-jquery", "~> 1.11.2"
+
+  # Programmatic bootstrap modals
+  gem "rails-assets-bootbox", "~> 4.3.0"
+
+  # Form validation
+  gem "rails-assets-parsleyjs", "~> 2.0.3"
+
+  # Icons
+  gem "rails-assets-font-awesome", "~> 4.1.0"
+end
 
 group :development do
   # Deployment
