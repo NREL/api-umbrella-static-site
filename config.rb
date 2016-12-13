@@ -20,10 +20,12 @@ page "/404.html", :directory_index => false
 
 # General configuration
 
-activate :sprockets
+activate :sprockets do |c|
+  c.imported_asset_path = "assets"
+  c.expose_middleman_helpers = true
+end
 activate :directory_indexes
 activate :syntax
-activate :relative_assets
 
 set :css_dir, "assets/stylesheets"
 set :js_dir, "assets/javascripts"
@@ -80,3 +82,5 @@ configure :build do
     %r{signup_embed.js},
   ]
 end
+
+activate :relative_assets
