@@ -11,7 +11,7 @@ gem "middleman", "~> 4.2.1"
 gem "middleman-livereload", "~> 3.4.6"
 
 # Environment specific config with environment variables
-gem "dotenv", "~> 2.2.1"
+gem "dotenv", "~> 2.5.0"
 
 # Syntax highlighting
 gem "middleman-syntax", "~> 3.0.0"
@@ -30,17 +30,17 @@ gem "font-awesome-sass", "~> 4.7.0"
 
 source "https://rails-assets.org" do
   # jQuery
-  gem "rails-assets-jquery", "~> 3.2.1"
+  gem "rails-assets-jquery", "~> 3.3.1"
 
   # Programmatic bootstrap modals
   gem "rails-assets-bootbox", "~> 4.4.0"
 
   # Form validation
-  gem "rails-assets-parsleyjs", "~> 2.7.2"
+  gem "rails-assets-parsleyjs", "~> 2.8.1"
 end
 
 group :development do
   # Deployment
-  gem "capistrano", "~> 3.8.1"
+  gem "capistrano", "~> 3.11.0"
   gem "capistrano-rsync-bladrak", "~> 1.4.2"
 end
