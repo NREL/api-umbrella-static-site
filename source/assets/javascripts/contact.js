@@ -1,3 +1,5 @@
+//= require popper.js
+//= require bootstrap/util.js
 //= require bootstrap/button.js
 //= require bootstrap/modal.js
 //= require parsleyjs.js
