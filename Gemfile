@@ -15,6 +15,7 @@ gem "middleman-gh-pages", "~> 0.4.1"
 
 # Assets
 gem "middleman-sprockets", "~> 4.1.0"
+gem "sprockets", "< 4"
 
 # Bootstrap
 gem "bootstrap", "~> 4.3.1"
